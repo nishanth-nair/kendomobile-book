@@ -1,0 +1,16 @@
+﻿<div data-role="view" data-title="Trailers"
+     data-show="MovieTickets.trailers.show"
+     data-layout="mt-main-layout" id="mt-trailers-view">
+    <div id="mt-trailer-scrollview" data-role="scrollview">     
+        
+    </div>
+    <!-- In order for the pages to be rendered properly
+          make sure that you dont leave empty spaces
+         between template's script tags and the html contents.
+    -->
+     <script type="text/x-kendo-template"
+             id="mt-tmpl-trailers"><div data-role="page"
+                  class="mt-trailer-item"><div class="mt-listitem-title">#:MovieName# </div><div>
+          <iframe width="220" src="#:VideoUrl#"></iframe></div></div>
+     </script>
+</div>

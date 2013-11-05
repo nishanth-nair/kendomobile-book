@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieTicketDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MoviesTicketDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Movies" EntityType="MovieTicketDBModel.Movie" />
+    <EntitySet Name="Screens" EntityType="MovieTicketDBModel.Screen" />
+    <EntitySet Name="ShowTimes" EntityType="MovieTicketDBModel.ShowTime" />
+    <EntitySet Name="Theaters" EntityType="MovieTicketDBModel.Theater" />
+    <EntitySet Name="Users" EntityType="MovieTicketDBModel.User" />
+    <EntitySet Name="UserTickets" EntityType="MovieTicketDBModel.UserTicket" />
+  </EntityContainer>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="MovieId" />
+    </Key>
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MovieId" Nullable="false" />
+    <Property Type="Int32" Name="ReleaseYear" />
+    <Property Type="String" Name="Rated" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Reviews" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Screen">
+    <Key>
+      <PropertyRef Name="ScreenId" />
+    </Key>
+    <Property Type="Int32" Name="MovieId" Nullable="false" />
+    <Property Type="Int32" Name="ScreenId" Nullable="false" />
+    <Property Type="Int32" Name="TheaterId" Nullable="false" />
+    <Property Type="String" Name="Class" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Price" Precision="5" Scale="5" />
+    <Property Type="Int32" Name="Capacity" />
+  </EntityType>
+  <EntityType Name="ShowTime">
+    <Key>
+      <PropertyRef Name="MovieId" />
+      <PropertyRef Name="TheaterId" />
+      <PropertyRef Name="ScreenId" />
+    </Key>
+    <Property Type="Int32" Name="MovieId" Nullable="false" />
+    <Property Type="Int32" Name="TheaterId" Nullable="false" />
+    <Property Type="Int32" Name="ScreenId" Nullable="false" />
+    <Property Type="String" Name="Time" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Theater">
+    <Key>
+      <PropertyRef Name="TheaterId" />
+    </Key>
+    <Property Type="String" Name="Name" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TheaterId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="NoOfScreen" />
+    <Property Type="Int32" Name="Zipcode" />
+    <Property Type="String" Name="Latitude" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Longitude" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StreetAddress" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Password" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UserTicket">
+    <Key>
+      <PropertyRef Name="TicketId" />
+      <PropertyRef Name="MovieId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="TicketId" Nullable="false" />
+    <Property Type="Int32" Name="MovieId" Nullable="false" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="Status" />
+  </EntityType>
+</Schema>

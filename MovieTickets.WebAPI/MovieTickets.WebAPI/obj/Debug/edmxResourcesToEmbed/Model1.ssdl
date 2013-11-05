@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieTicketDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MovieTicketDBModelStoreContainer">
+    <EntitySet Name="Movie" EntityType="MovieTicketDBModel.Store.Movie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Theater" EntityType="MovieTicketDBModel.Store.Theater" store:Type="Tables" store:Schema="dbo" store:Name="Theater">
+      <DefiningQuery>SELECT 
+      [Theater].[Name] AS [Name], 
+      [Theater].[TheaterId] AS [TheaterId], 
+      [Theater].[NoOfScreen] AS [NoOfScreen], 
+      [Theater].[Zipcode] AS [Zipcode], 
+      [Theater].[Latitude] AS [Latitude], 
+      [Theater].[Longitude] AS [Longitude], 
+      [Theater].[State] AS [State], 
+      [Theater].[City] AS [City], 
+      [Theater].[StreetAddress] AS [StreetAddress], 
+      [Theater].[Country] AS [Country]
+      FROM [dbo].[Theater] AS [Theater]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="MovieId" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="MovieId" Type="int" Nullable="false" />
+    <Property Name="ReleaseYear" Type="int" />
+    <Property Name="Rated" Type="nvarchar" MaxLength="50" />
+    <Property Name="Reviews" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MovieTicketDB.dbo.Theater' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Theater">
+    <Key>
+      <PropertyRef Name="TheaterId" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TheaterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoOfScreen" Type="int" />
+    <Property Name="Zipcode" Type="int" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Country" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MovieTicketDB.dbo.User' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+</Schema>

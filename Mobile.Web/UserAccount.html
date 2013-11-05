@@ -1,0 +1,74 @@
+﻿T<div data-role="view" data-layout="mt-main-layout" data-title="Account" 
+    data-model="MovieTickets.userAccount.viewModel" id="mt-theaters-view">
+
+    <!-- This section is bound by Kendo MVVM Invisible binding -->
+    <div id="usracc-login-section" data-bind="invisible: isUserLoggedIn ">
+        <ul data-role="listview" data-style="inset">
+
+            <li>
+                <label>User Name:  </label>
+                <input type="text" data-bind="value:userName" id="user-acc-username" /></li>
+            <li>
+                <label>Password:  </label>
+                <input type="text" id="user-acc-password" data-bind="value:password" /></li>
+
+        </ul>
+        <div class="centerAlign">
+            <a data-role="button" id="user-acc-login-button" data-bind="click:userLogin">Login </a>
+
+        </div>
+    </div>
+
+    <div id="usracc-user-details" data-bind="visible: isUserLoggedIn ">
+        <div>
+            <ul data-role="listview">
+                <li>First Name
+                       
+                        <input type="text" id="usracc-firstName" data-bind="value: firstName" />
+                </li>
+                <li>Last Name
+                       
+                        <input type="text" id="usracc-lastName" data-bind="value: lastName" />
+                </li>
+                <li>Address
+                       
+                        <input type="text" id="usracc-address" data-bind="value: userAddress" />
+                </li>
+                <li>Email
+                       
+                        <input type="text" id="usracc-emailAddress" data-bind="value: userEmailAddress" />
+                </li>
+                  <li>Newsletter
+                      <span style="text-align:left"> <input  type="checkbox" id="usracc-newsletter" data-role="switch" data-bind="checked: subscribedForNewsLetter" /></span>
+                        
+                </li>
+            </ul>
+        </div>
+        <br />
+        <div class="centerAlign">
+            <a data-role="button" id="usracc-btn-update" data-bind="click:updateUserDetails">Update </a>
+
+        </div>
+
+        <!--Booking History section-->
+        <div>
+            <h3>Booking History </h3>
+
+            <!--Render template using MVVM Source binding -->
+            <ul data-role="listview" data-style="inset" id="usracc-bkng-hstry-list" data-template="usracc-booking-history-tmpl" data-bind="source: userBookingHistory"></ul>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/x-kendo-template" id="usracc-booking-history-tmpl">
+        Movie: <span class="valueText"> #=MovieName #</span> Tickets:  <span class="valueText"> #=NoOfPersons # </span>
+            <br/>
+            Theater:<span class="valueText"> #=TheaterName # </span>
+            <br/>
+            Screen: <span class="valueText">#=Screen # </span> Show Date: <span class="valueText"> #=ShowDate# </span>
+            <br/>        
+            Time: <span class="valueText">#=ShowTime # </span>
+     
+    
+</script>

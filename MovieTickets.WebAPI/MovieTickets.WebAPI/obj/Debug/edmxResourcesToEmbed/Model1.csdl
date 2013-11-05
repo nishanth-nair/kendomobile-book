@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieTicketDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MovieTicketDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Theaters" EntityType="MovieTicketDBModel.Theater" />
+    <EntitySet Name="Movies" EntityType="MovieTicketDBModel.Movie" />
+  </EntityContainer>
+  <EntityType Name="Theater">
+    <Key>
+      <PropertyRef Name="TheaterId" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="TheaterId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="NoOfScreen" Type="Int32" />
+    <Property Name="Zipcode" Type="Int32" />
+    <Property Name="Latitude" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Longitude" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="StreetAddress" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="MovieId" />
+    </Key>
+    <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MovieId" Nullable="false" />
+    <Property Type="Int32" Name="ReleaseYear" />
+    <Property Type="String" Name="Rated" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Reviews" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieTicketDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MovieTicketDBModelStoreContainer">
+    <EntitySet Name="Movie" EntityType="MovieTicketDBModel.Store.Movie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Screen" EntityType="MovieTicketDBModel.Store.Screen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ShowTime" EntityType="MovieTicketDBModel.Store.ShowTime" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Theater" EntityType="MovieTicketDBModel.Store.Theater" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="MovieTicketDBModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserTicket" EntityType="MovieTicketDBModel.Store.UserTicket" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="MovieId" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="MovieId" Type="int" Nullable="false" />
+    <Property Name="ReleaseYear" Type="int" />
+    <Property Name="Rated" Type="nvarchar" MaxLength="50" />
+    <Property Name="Reviews" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Screen">
+    <Key>
+      <PropertyRef Name="ScreenId" />
+    </Key>
+    <Property Name="MovieId" Type="int" Nullable="false" />
+    <Property Name="ScreenId" Type="int" Nullable="false" />
+    <Property Name="TheaterId" Type="int" Nullable="false" />
+    <Property Name="Class" Type="nvarchar" MaxLength="100" />
+    <Property Name="Price" Type="numeric" Precision="5" Scale="5" />
+    <Property Name="Capacity" Type="int" />
+  </EntityType>
+  <EntityType Name="ShowTime">
+    <Key>
+      <PropertyRef Name="MovieId" />
+      <PropertyRef Name="TheaterId" />
+      <PropertyRef Name="ScreenId" />
+    </Key>
+    <Property Name="MovieId" Type="int" Nullable="false" />
+    <Property Name="TheaterId" Type="int" Nullable="false" />
+    <Property Name="ScreenId" Type="int" Nullable="false" />
+    <Property Name="Time" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Theater">
+    <Key>
+      <PropertyRef Name="TheaterId" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TheaterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NoOfScreen" Type="int" />
+    <Property Name="Zipcode" Type="int" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="Country" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="UserTicket">
+    <Key>
+      <PropertyRef Name="TicketId" />
+      <PropertyRef Name="MovieId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="TicketId" Type="int" Nullable="false" />
+    <Property Name="MovieId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+</Schema>

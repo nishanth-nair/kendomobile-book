@@ -1,0 +1,100 @@
+﻿<div data-role="view"
+    data-title="Book Tickets" data-layout="mt-main-layout"
+    data-show="MovieTickets.bookTickets.show"
+    data-model="MovieTickets.bookTickets.viewModel"
+    id="mt-book-tickets-view">
+
+
+    <ul data-role="listview">
+        <li>
+            <span class="mt-listitem-title"
+                  data-bind="text: selectedMovie.movieName">
+            </span>
+            <span class="mt-highlight-label"
+                  data-bind="text: selectedMovie.rating">
+            </span>
+            <br />
+        </li>
+        <li>
+            <span class="mt-title"
+                  data-bind="text: selectedTheater.theaterName">
+            </span>
+            <br />
+            <span class="mt-normal-label"
+                  data-bind="text: selectedTheater.address">
+            </span>
+            <br />
+            <span class="mt-normal-label">Date:</span>
+            <span class="mt-highlight-label"
+                  data-bind="text: selectedTheater.date">
+            </span>
+            <span class="mt-highlight-label"
+                  data-bind="text: selectedTheater.time"></span>
+        </li>
+    </ul>
+
+    <ul data-role="listview" data-style="inset">
+        <li>
+            <div>
+                Adult:
+                <br />
+                <img src="images/add.png" class="mt-list-image"
+                     data-bind="click:incrementAdultTicket" />
+                <input type="text" data-bind="value:noAdultTickets"
+                       class="mt-ticket-num-input" />
+
+                <img src="images/remove.png" class="mt-list-image"
+                     data-bind="click:decrementAdultTicket" />
+                x 10.00 = $
+                <label data-bind="text:noAdultTotalAmount"></label>
+            </div>
+        </li>
+        <li>
+            <div>
+                Child:
+                <br />
+                <img src="images/add.png" class="mt-list-image"
+                     data-bind="click:incrementChildTicket" />
+                <input type="text" data-bind="value:noChildTickets"
+                       class="mt-ticket-num-input" />
+                <img src="images/remove.png" class="mt-list-image"
+                     data-bind="click:decrementChildTicket" />
+                x 8.00 =
+            $<label data-bind="text:noChildTotalAmount"></label>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="mt-title">Total: </span>
+                <span class="mt-total-amount">
+                    $<label data-bind="text:totalAmount"></label>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a data-role="button" class="mt-purchase-button"
+                    data-click="MovieTickets.bookTickets.purchaseTickets">
+                    Purchase
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="mt-modal-complete" data-role="modalview">
+    <div style="padding: 15px;">
+        <div>
+            Your transaction is now complete! 
+            Thank you for purchasing tickets with us!
+        </div>
+        <div style="text-align: center; padding-top: 10px;">
+            <a data-role="button"
+               data-click="MovieTickets.bookTickets.closeModalView">
+                close
+            </a>
+        </div>
+    </div>
+
+</div>
+

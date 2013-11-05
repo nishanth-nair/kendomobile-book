@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+     <script src="http://cdn.kendostatic.com/2013.1.319/js/kendo.all.min.js"> </script>   
+     <link href="http://cdn.kendostatic.com/2013.1.319/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    
+    <!--There is a bug with ScrllView widget in the latest version of Kendo(2013.2.716) which affects
+        the trailers screen. So we are using the previous quarter's version by default. To see the latest
+        features like flat skin, Drawer widget etc, enable 2013.2.716 version.  -->
+   <!--<script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.all.min.js"> </script>   
+     <link href="http://cdn.kendostatic.com/2013.1.716/styles/kendo.mobile.all.min.css" rel="stylesheet" />-->
+    
+    
+    <link href="styles/Style.css" rel="stylesheet" />
+    <script>
+        //This global varibale MovieTickets will act as a name space for 
+        //our application. Objects from other modules will be
+        //available as properties of this object.
+        //This way we lower the possibility of naming collisions
+        //when using our code in conjunction with other JavaScript libraries
+        var MovieTickets = MovieTickets || {};
+    </script>
+    <script src="js/configuration.js"> </script>
+    <script src="js/common.js"> </script>
+    <script src="js/data-access.js"> </script>
+    <script src="js/user-account.js"> </script>
+    <script src="js/movie-tickets.js"> </script>
+    <script src="js/movie-list.js"> </script>
+    <script src="js/theaters-movie-list.js"> </script>
+    <script src="js/book-tickets.js"> </script>
+    <script src="js/trailers.js"> </script>
+    <style>
+        .no-backbutton .km-back {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Movies main view --->
+    <div data-role="view" id="mt-home-main-view" data-title="Movies"
+        data-init="MovieTickets.movieList.initialize"
+        data-model="MovieTickets.movieList.viewModel"
+        data-layout="mt-main-layout" class="no-backbutton">
+
+        <!-- filter -->
+        <ul data-role="buttongroup" data-index="0"
+            data-select="MovieTickets.movieList.listTypeSelected">
+            <li>Now Playing</li>
+            <li>Coming Soon</li>
+            <li>A-Z</li>
+        </ul>
+
+        <!--Movie List -->
+        <ul id="mt-main-movie-list-view" data-role="listview"
+            data-template="mt-main-tmpl-movie-list"
+            data-filterable="{field:'Name', operator:'startsWith'}"
+            data-bind="source:movieList">
+        </ul>
+
+    </div>
+
+    <!-- Theater list for a selected movie-->
+    <div data-role="view" id="mt-theaters-movie-view"
+         data-model="MovieTickets.theaterListForMovie.viewModel"
+         data-show="MovieTickets.theaterListForMovie.show"
+         data-layout="mt-main-layout" data-title="Theaters">
+        <div id="mt-theaters-movie-details">
+            <img class="mt-movie-photo"
+                 data-bind="attr: { src: selectedMovie.imageUrl}" />
+            <div class="mt-movie-details">
+
+                <div class="mt-listitem-title"
+                     data-bind="text: selectedMovie.movieName"></div>
+                <div class="mt-highlight-label"
+                     data-bind="text: selectedMovie.rating"></div>
+                Date: <span class="mt-highlight-label"
+                            data-bind="text: selectedDate"></span>
+
+            </div>
+        </div>
+        <hr />
+
+        <ul id="mt-theaters-movie-list" data-role="listview"
+            data-template="mt-main-tmpl-theater-list"
+            data-bind="source:theaterList">
+        </ul>
+    </div>
+    
+    <!-- about view -->
+    <div data-role="view" id="mt-about-view" data-title="About" data-layout="mt-main-layout">
+        <div style="padding: 15px">
+            This is a sample application developed for the book <span class="mt-highlight-label">Building Mobile Applications using Kendo UI Mobile and ASP.NET Web API </span>
+        </div>
+    </div>
+
+    <!-- layout -->
+    <div data-role="layout" data-id="mt-main-layout">
+        <header data-role="header">
+            <div data-role="navbar" id="mt-main-layout-navbar">
+                <a data-align="left" data-role="backbutton">Back</a>
+                <span data-role="view-title">Movie Tickets </span>
+                <a data-align="right" style="display: none" class="mt-main-layout-btn-logoff"
+                    data-click="MovieTickets.userAccount.viewModel.logOff" data-role="button">Log Off</a>
+            </div>
+        </header>
+        <footer data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#mt-home-main-view"><img src="images/movies.ico" height="40" width="40" /><br />
+                        Movies
+                </a>
+                <a href="Trailers.html"><img src="images/trailers.ico" height="40" width="40" /><br />
+                        Trailers
+                    
+                </a>
+                <a href="UserAccount.html"><img src="images/user_profile.ico" height="40" width="40" /><br />
+                        My Account                    
+                </a>
+
+                <a href="#mt-about-view" data-icon="about" >                    
+                        <br />
+                        About
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!--template for movie list -->
+    <script type="text/x-kendo-template" id="mt-main-tmpl-movie-list">  
+        # var ecodedURI = '\\#mt-theaters-movie-view?movieId=' +
+                         MovieId + '&movieName=' + 
+                         encodeURIComponent(Name) + '&rating=' +
+                         Rating + '&image=' + Image #
+                
+        #if(IsNowPlaying !== true){
+            ecodedURI= "";
+          }#       
+
+   <a href="#:ecodedURI#" >
+        <img class="mt-movie-photo" src="#:Image#" />
+        <div class="mt-movie-details">
+        <span class="mt-listitem-title"> #:Name# </span>
+        <span data-bind="invisible:IsNowPlaying"
+              class="mt-highlight-label2">[Coming Soon]</span><br/> 
+        <span class="mt-normal-label"> #:Genre#, </span>
+        <span class="mt-normal-label"> #:Length# Mins </span>
+        <span class="mt-highlight-label"> #:Rating# </span> <br/>
+        <span class="mt-normal-label"> #:LeadStars# </span>
+        </div>
+      </a>    
+    </script>
+
+    <!-- template for theater list for each movie -->
+    <script type="text/x-kendo-template" id="mt-main-tmpl-theater-list">
+        <!-- redirect URI-->             
+          #var ecodedURI = 'theaterName=' + encodeURIComponent( Name ) +
+                '&address=' + encodeURIComponent( Address ) +
+                '&movieName=' + encodeURIComponent( MovieTickets.
+                    theaterListForMovie.viewModel.selectedMovie.movieName ) +
+                '&rating=' + MovieTickets
+                                .theaterListForMovie.viewModel.selectedMovie.rating +
+                '&movieId=' +  MovieTickets
+                    .theaterListForMovie.viewModel.selectedMovie.movieId +
+                '&theaterId=' + TheaterId +
+                '&date=' + encodeURIComponent( MovieTickets
+                            .theaterListForMovie.viewModel.selectedDate )
+         #  
+        
+        <div>
+            <span class="mt-title"> #:Name# </span>  
+            <span class="mt-highlight-label"> #:MilesFromCurrentLoc# Miles </span><br/>                
+            <span class="mt-normal-label"> #:Address# </span>
+                     
+            <div>
+                <!--  render show times --?
+                #for(var i=0; i < Timings.length; i++) {#
+                <a class="mt-timings" href="\\#BookTickets.html?#:ecodedURI#
+                    &time=#:encodeURIComponent(Timings[i])#">#:Timings[i]#</a> 
+
+                <!--Add pipe separator for show times -->
+                #if(i < (Timings.length - 1)){#
+                    | <!--The pipe separator wont appear for the last item -->
+                #}#
+                #}#   
+           </div>  
+        </div>
+   
+    </script>
+
+    <!-- templates end -->
+
+
+
+    <script>
+        //Kendo Mobile is initialized in this method
+        MovieTickets.main.initializeApp();
+
+    </script>
+</body>
+</html>

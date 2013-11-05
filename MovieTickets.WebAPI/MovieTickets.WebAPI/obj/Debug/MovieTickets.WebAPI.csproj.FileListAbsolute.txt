@@ -1,0 +1,126 @@
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.pdb
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Antlr3.Runtime.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Optimization.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Providers.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\WebGrease.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.csprojResolveAssemblyReference.cache
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.dll
+C:\Web API\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.pdb
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.pdb
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Optimization.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Providers.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.csprojResolveAssemblyReference.cache
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.pdb
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.pdb
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Optimization.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Providers.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.pdb
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.dll
+C:\Nishanth\Personal\Kendo Mobile Book\Chapters\First Draft\Code\Sample App\SVN\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\raginib.EMIDS1\Documents\attach\attach\MovieTicketApp\kendomobile_onlineticketbooking\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.csprojResolveAssemblyReference.cache
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\MovieTickets.WebAPI.pdb
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.WebRequest.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Optimization.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Providers.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\Newtonsoft.Json.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\EntityFramework.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Net.Http.WebRequest.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Helpers.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Mvc.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.Razor.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.csprojResolveAssemblyReference.cache
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.dll
+C:\Nishanth\Kendo Mobile Book\Source Code\MovieTickets.WebAPI\MovieTickets.WebAPI\obj\Debug\MovieTickets.WebAPI.pdb
